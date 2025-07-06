@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+}
+
+.header {
+  background-color: #e5c9c9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h2 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.navbar a.active {
+  background-color: #c8a5b5;
+}
+
+.navbar .icons span {
+  margin-left: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+.pesan-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: #cba8b9;
+  border-radius: 25px;
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  color: white;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-header .back {
+  font-size: 24px;
+}
+
+.card-header h2 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.alamat, .rincian {
+  border-top: 2px solid #fff;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.alamat h3,
+.rincian h3 {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.produk {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #fff;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.produk img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.produk-info {
+  flex: 1;
+}
+
+.qty {
+  font-weight: bold;
+}
+
+.rincian .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn-bayar {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-bayar button {
+  background-color: #6b5c9c;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-pesan {
+  margin-top: 10px;
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  transition: background-color 0.3s ease;
+}
+.logo h2 {
+  color: #ffffff; /* Ganti dengan warna yang kamu inginkan */
+}
+.btn-kembali {
+  display: inline-block;
+  background-color: #5b4a50;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-kembali:hover {
+  background-color: #3f3338;
+}

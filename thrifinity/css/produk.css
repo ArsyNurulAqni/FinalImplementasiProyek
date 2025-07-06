@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+.header {
+  background-color: #e5c9c9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h2 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.navbar a.active {
+  background-color: #d6b0b7;
+}
+
+.navbar .icons span {
+  margin-left: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+.flash-sale {
+  background-color: #d4b0c1;
+  padding: 50px;
+}
+
+.flash-sale h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.produk-lain {
+  background-color: white;
+  padding: 30px;
+}
+
+.product-card.shadow {
+  background-color: #e7c3c3;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-pesan {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #7966a8;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pesan:hover {
+  background-color: #5f4b91;
+}
+.product-card img {
+  width: 50%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.logo h2 {
+  color: #ffffff; /* Ganti dengan warna yang kamu inginkan */
+}
+.menu-box {
+  margin: 30px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #eee;
+}
+
+.menu-item span:first-child {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.arrow {
+  font-weight: bold;
+}
+

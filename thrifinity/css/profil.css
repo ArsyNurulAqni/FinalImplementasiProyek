@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+}
+
+.header {
+  background-color: #e5c9c9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h2 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.navbar .icons span {
+  margin-left: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+.profil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.user-icon {
+  font-size: 100px;
+  background-color: #cca7b8;
+  border-radius: 50%;
+  padding: 30px;
+  color: #5b4a50;
+}
+
+.menu-box {
+  background-color: #cba8b9;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 40px;
+  width: 80%;
+  max-width: 500px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.menu-item span {
+  font-size: 20px;
+}
+
+.menu-item p {
+  flex: 1;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.arrow {
+  font-weight: bold;
+}
+
+.confirm-box {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.confirm-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.confirm-content p {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.confirm-buttons button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn-yes {
+  background-color: #d9534f;
+  color: white;
+}
+
+.btn-cancell {
+  background-color: #6c757d;
+  color: white;
+}
+
+.hapus-akun {
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* ✅ Form Ubah Password */
+.password-form {
+  display: none;
+  background-color: #cba8b9;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 500px;
+  color: white;
+}
+
+.password-form h3 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.password-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.password-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.password-form button {
+  background-color: #5b4a50;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.password-form button:hover {
+  background-color: #3f3338;
+}
+/* ✅ Tampilan form ubah password */
+.password-box {
+  background-color: #cba8b9;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.password-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.password-box button {
+  background-color: #5b4a50;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.password-box button:hover {
+  background-color: #3f3338;
+}
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  background-color: #555;
+}
+

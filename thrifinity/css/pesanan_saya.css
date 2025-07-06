@@ -1,0 +1,218 @@
+/* Umum */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+.judul {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: #007bff;
+}
+.navbar .icons {
+  margin-left: 10px;
+}
+
+/* Main Container */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Judul halaman */
+main h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* Kartu Pesanan */
+.order-card {
+  border: 1px solid #ddd;
+  border-left: 5px solid #007bff;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  transition: box-shadow 0.3s;
+}
+.order-card:hover {
+  box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.1);
+}
+.order-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #007bff;
+}
+.order-card p {
+  margin: 4px 0;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar a {
+    margin: 5px 0;
+  }
+
+  main {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .order-card {
+    padding: 12px 15px;
+  }
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+.header {
+  background-color: #e5c9c9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h2 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.navbar a.active {
+  background-color: #d6b0b7;
+}
+
+.navbar .icons span {
+  margin-left: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 60px;
+  background-color: #fff;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+.hero-text h1 strong {
+  color: #5a6780;
+}
+
+.btn-hero {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #d6b0b7;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-hero:hover {
+  background-color: #b48b95;
+}
+
+.hero-image img {
+  max-width: 370px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  padding-right: 100px; /* Geser sedikit dari kanan */
+}
