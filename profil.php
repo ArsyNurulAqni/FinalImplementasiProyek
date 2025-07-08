@@ -78,7 +78,7 @@ $user = mysqli_fetch_assoc($result);
         <span class="arrow">></span>
       </div>
 
-      <div class="menu-item" onclick="window.location.href='logout.php'">
+      <div class="menu-item" onclick="window.location.href='login.php'">
         <span>↩️</span>
         <p class="hapus-akun">Keluar</p>
         <span class="arrow">></span>

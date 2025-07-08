@@ -2,7 +2,6 @@
 session_start();
 include 'koneksi.php';
 
-// Cek login
 if (!isset($_SESSION['id'])) {
   echo "<script>alert('Silakan login terlebih dahulu.'); window.location='login.php';</script>";
   exit;
@@ -19,34 +18,34 @@ $result = mysqli_query($conn, $query);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pesanan Saya - Thrifinity</title>
   <link rel="stylesheet" href="css/pesanan_saya.css">
-  
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="header">
   <div class="logo">
     <img src="gambar/image 13.png" alt="Logo Thrifinity">
-    <h2 class="judul">Thrifinity</h2>
+    <h2>Thrifinity</h2>
   </div>
-  <nav class="navbar">
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="navbar" id="navMenu">
     <a href="beranda.php">Home</a>
     <a href="produk.php">Produk</a>
-    <a href="produk.php">Produk</a>
     <div class="icons">
-     
       <a href="profil.php"><span>👤</span></a>
     </div>
   </nav>
 </header>
 
 <main>
-  <h2>Pesanan Saya</h2>
-
+  <center><h2>Pesanan Saya</h2></center>
   <?php if (mysqli_num_rows($result) > 0): ?>
     <?php while ($row = mysqli_fetch_assoc($result)): ?>
-      <?php
-      ?>
       <div class="order-card">
         <div class="order-details">
           <h3><?= htmlspecialchars($row['nama_produk']) ?></h3>
@@ -62,6 +61,12 @@ $result = mysqli_query($conn, $query);
   <?php endif; ?>
 </main>
 
-</body>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("show");
+  }
+</script>
 
+</body>
 </html>

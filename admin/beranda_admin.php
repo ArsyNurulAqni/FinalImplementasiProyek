@@ -7,10 +7,10 @@
   <title>Beranda Admin - Thrifinity</title>
   <link rel="stylesheet" href="../css/berandaa.css" />
   <style>
+    /* tambahan khusus admin */
     .btn-hapus {
       display: inline-block;
       padding: 8px 14px;
-      margin-top: 8px;
       background-color: #e53935;
       color: #fff;
       text-decoration: none;
@@ -27,6 +27,44 @@
       gap: 10px;
       margin-top: 10px;
     }
+
+    /* menu toggle untuk admin */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      margin-left: auto;
+    }
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      .header nav.navbar {
+        display: none;
+        flex-direction: column;
+        background: #e5c9c9;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .header nav.navbar.show {
+        display: flex;
+      }
+      .header nav.navbar a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        margin: 4px 0;
+        background: #d6b0b7;
+      }
+      .menu-toggle {
+        display: flex;
+      }
+    }
   </style>
 </head>
 <body>
@@ -37,7 +75,14 @@
       <img src="../gambar/image 13.png" alt="Logo Thrifinity" />
       <h2 class="judul">Admin - Thrifinity</h2>
     </div>
-    <nav class="navbar">
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="navbar" id="navMenu">
       <a href="admin_beranda.php" class="active">Beranda Admin</a>
       <a href="../login.php">Keluar</a>
     </nav>
@@ -65,15 +110,12 @@
                 <a href="edit_produk.php?id=' . $row['id'] . '" class="btn-pesan">Ubah</a>
                 <a href="?hapus=' . $row['id'] . '" class="btn-hapus" onclick="return confirm(\'Yakin ingin menghapus produk ini?\')">Hapus</a>
               </div>
-            </div>
-          ';
+            </div>';
         }
 
-        // PROSES HAPUS PRODUK
         if (isset($_GET['hapus'])) {
           $id = (int)$_GET['hapus'];
           $cek = mysqli_query($conn, "SELECT * FROM produk WHERE id = $id");
-
           if (mysqli_num_rows($cek) > 0) {
             $data = mysqli_fetch_assoc($cek);
             if (!empty($data['gambar']) && file_exists("../gambar/" . $data['gambar'])) {
@@ -89,5 +131,10 @@
     </div>
   </section>
 
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
