@@ -32,6 +32,7 @@ $result = mysqli_query($conn, $query);
   <nav class="navbar">
     <a href="beranda.php">Home</a>
     <a href="produk.php">Produk</a>
+    <a href="produk.php">Produk</a>
     <div class="icons">
      
       <a href="profil.php"><span>👤</span></a>
