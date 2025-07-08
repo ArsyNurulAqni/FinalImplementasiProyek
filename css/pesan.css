@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+}
+
+.header {
+  background-color: #e5c9c9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h2 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.navbar a.active {
+  background-color: #c8a5b5;
+}
+
+.navbar .icons span {
+  margin-left: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+.pesan-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: #cba8b9;
+  border-radius: 25px;
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  color: white;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-header .back {
+  font-size: 24px;
+}
+
+.card-header h2 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.alamat, .rincian {
+  border-top: 2px solid #fff;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.alamat h3,
+.rincian h3 {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.produk {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #fff;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.produk img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.produk-info {
+  flex: 1;
+}
+
+.qty {
+  font-weight: bold;
+}
+
+.rincian .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn-bayar {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-bayar button {
+  background-color: #6b5c9c;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-pesan {
+  margin-top: 10px;
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  transition: background-color 0.3s ease;
+}
+.logo h2 {
+  color: #ffffff; /* Ganti dengan warna yang kamu inginkan */
+}
+.btn-kembali {
+  display: inline-block;
+  background-color: #5b4a50;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-kembali:hover {
+  background-color: #3f3338;
+}
+/* FOOTER */
+.footer {
+  background-color: #f6dddd;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.footer-section p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 8px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 14px;
+}
+
+.newsletter-form button {
+  padding: 8px 16px;
+  background-color: #d6b0b7;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #b48b95;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .pesan-container {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .card-header h2 {
+    font-size: 22px;
+  }
+
+  .produk {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .produk img {
+    margin-bottom: 15px;
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .footer-section {
+    min-width: 100%;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input[type="email"],
+  .newsletter-form button {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .newsletter-form button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-header h2 {
+    font-size: 20px;
+  }
+
+  .btn-bayar button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .btn-kembali {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .footer-section h4 {
+    font-size: 14px;
+  }
+
+  .footer-section p {
+    font-size: 13px;
+  }
+
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+}

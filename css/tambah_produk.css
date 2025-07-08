@@ -1,0 +1,123 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #fff5f8, #fdeef5);
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  background-color: #ffffff;
+  max-width: 460px;
+  margin: 60px auto;
+  padding: 36px 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(255, 153, 187, 0.15);
+  border: 1px solid #f8d4e5;
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-2px);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #d94880;
+  font-size: 24px;
+}
+
+.form-container form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #b13c6f;
+  font-size: 14px;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="number"],
+.form-container form input[type="file"],
+.form-container form input[type="email"],
+.form-container form input[type="password"] {
+  width: 100%;
+  padding: 11px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #f3b6cd;
+  border-radius: 10px;
+  background-color: #fff7fa;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.form-container form input:focus {
+  border-color: #ec7fae;
+  outline: none;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e7548f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(231, 84, 143, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #c64078;
+}
+
+.form-container a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #c64078;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .form-container {
+    margin: 30px 15px;
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-container form label {
+    font-size: 13px;
+  }
+
+  .form-container form input[type="text"],
+  .form-container form input[type="number"],
+  .form-container form input[type="file"],
+  .form-container form input[type="email"],
+  .form-container form input[type="password"] {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .form-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .form-container a {
+    font-size: 13px;
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,131 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fef4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  background-color: #ffffff;
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.1);
+  border: 1px solid #fbd6e3;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #d63384;
+  font-weight: bold;
+}
+
+.form-container form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #b03060;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="number"],
+.form-container form input[type="email"],
+.form-container form input[type="password"],
+.form-container form input[type="file"] {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 18px;
+  border: 1px solid #f5b6c6;
+  border-radius: 8px;
+  background-color: #fff7fa;
+  transition: border-color 0.2s;
+}
+
+.form-container form input:focus {
+  border-color: #e97ca3;
+  outline: none;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 13px;
+  background-color: #e7548f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #cc437a;
+}
+
+.form-container a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #cc437a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .form-container {
+    margin: 30px 20px;
+    padding: 24px;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+  }
+
+  .form-container form label {
+    font-size: 14px;
+  }
+
+  .form-container form input[type="text"],
+  .form-container form input[type="number"],
+  .form-container form input[type="email"],
+  .form-container form input[type="password"],
+  .form-container form input[type="file"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .form-container button {
+    padding: 11px;
+    font-size: 15px;
+  }
+
+  .form-container a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+  }
+
+  .form-container button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .form-container a {
+    font-size: 13px;
+  }
+}
